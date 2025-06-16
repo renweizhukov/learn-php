@@ -1,5 +1,3 @@
 <?php
 
-$daysInWeek = 7;
-
-echo $text = 'There are ' . $daysInWeek . ' days in a week.';
+echo '<a href="https://www.google.com">Google</a>';
