@@ -1,4 +1,5 @@
 <?php
 
+$daysInWeek = 7;
 
-echo 'Hello, world!';
+echo $text = 'There are ' . $daysInWeek . ' days in a week.';
