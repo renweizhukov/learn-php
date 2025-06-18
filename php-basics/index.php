@@ -20,3 +20,13 @@ echo $users[1]['email'];
 foreach ($users as $user) {
   echo '<pre>', var_dump($user), '</pre>';
 }
+
+$name = "Wei";
+
+echo "Hello $name<br>";
+
+unset($name);
+
+echo "Hello $name<br>";
+var_dump(isset($name));
+var_dump($name);
