@@ -44,7 +44,13 @@ $daysOfWeek = [
 $dayOfWeek = -1;
 
 if (in_array($dayOfWeek, array_keys($daysOfWeek))) {
-  echo $daysOfWeek[$dayOfWeek];
+  echo $daysOfWeek[$dayOfWeek] . '<br>';
 } else {
-  echo 'Invalid day of week';
+  echo 'Invalid day of week' . '<br>';
 }
+
+$int_str = '123s';
+echo (int)$int_str . '<br>';
+
+$non_int_str = 's123';
+echo (int)$non_int_str . '<br>';
