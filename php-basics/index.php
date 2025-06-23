@@ -54,3 +54,22 @@ echo (int)$int_str . '<br>';
 
 $non_int_str = 's123';
 echo (int)$non_int_str . '<br>';
+
+$weather = 'snowy';
+$color = null;
+
+switch (true) {
+  case $weather === 'sunny':
+    $color = 'blue';
+    break;
+  case $weather === 'rainy':
+    $color = 'green';
+    break;
+  case $weather === 'snowy':
+    $color = 'white';
+    break;
+  default:
+    $color = 'black';
+}
+
+echo $weather . ' is ' . $color . '<br>';
