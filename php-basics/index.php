@@ -73,3 +73,18 @@ switch (true) {
 }
 
 echo $weather . ' is ' . $color . '<br>';
+
+$total_lessons = 30;
+$completed_lessons = 7;
+
+$percentage_completed = number_format($completed_lessons / $total_lessons * 100, 2);
+echo "You've completed {$percentage_completed}% of the lessons.<br>";
+
+$rows = 10;
+for ($row = 0; $row < $rows; ++$row) {
+  if ($row % 2 === 0) {
+    echo 'Even<br>';
+  } else {
+    echo 'Odd<br>';
+  }
+}
