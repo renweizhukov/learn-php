@@ -88,3 +88,13 @@ for ($row = 0; $row < $rows; ++$row) {
     echo 'Odd<br>';
   }
 }
+
+$total_items = 520;
+$items_per_page = 20;
+
+$page_count = ceil($total_items / $items_per_page);
+if ($page_count > 1) {
+  for ($i = 1; $i <= $page_count; ++$i) {
+    echo "<a href='?page={$i}'>{$i}</a> ";
+  }
+}
