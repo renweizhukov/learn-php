@@ -1,5 +1,12 @@
 <?php
 
+$number_i_want = 5;
+while (($dice = rand(1, 6)) !== $number_i_want) {
+  echo "You rolled a {$dice}, we need a {$number_i_want}.<br>";
+}
+
+echo "You rolled a {$dice}!<br>";
+
 echo '<a href="https://www.google.com">Google</a><br>';
 
 $users = [
