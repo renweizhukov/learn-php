@@ -1,5 +1,34 @@
 <?php
 
+$users = [
+  [
+    'username' => 'alex',
+    'likes' => ['pizza', 'pasta', 'ice cream'],
+  ],
+  [
+    'username' => 'billy',
+    'likes' => ['code', 'cats', 'ice cream'],
+  ],
+  [
+    'username' => 'alex',
+    'likes' => ['dogs', 'code', 'ice cream'],
+  ],
+];
+
+$to_find = 'code';
+$found = null;
+foreach ($users as $user) {
+  foreach ($user['likes'] as $like) {
+    if ($like === $to_find) {
+      $found = $user;
+      break 2;
+    }
+  }
+}
+
+var_dump($found);
+echo '<br>';
+
 $names = ['Alex', 'Billy', 'Cindy', 'David', 'Eric'];
 foreach($names as $index => $name) {
   echo "{$index}: {$name}<br>";
