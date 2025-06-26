@@ -1,5 +1,10 @@
 <?php
 
+$names = ['Alex', 'Billy', 'Cindy', 'David', 'Eric'];
+foreach($names as $index => $name) {
+  echo "{$index}: {$name}<br>";
+}
+
 $number_i_want = 5;
 while (($dice = rand(1, 6)) !== $number_i_want) {
   echo "You rolled a {$dice}, we need a {$number_i_want}.<br>";
