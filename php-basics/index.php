@@ -1,5 +1,15 @@
 <?php
 
+$config = [
+  'separator' => '_',
+];
+
+$full_name = function ($first_name, $last_name) use ($config) {
+  return "{$first_name}{$config['separator']}{$last_name}";
+};
+
+echo $full_name('Wei', 'Ren') . '<br>';
+
 $users = [
   [
     'username' => 'alex',
